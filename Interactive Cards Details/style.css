@@ -234,15 +234,29 @@
     color: white;
 }
 
-/* <div class="DateCards">
-          <h1>Exp. Date (MM/YY)</h1>
-          <input class="Input1Cards" type="number" placeholder="MM">
-          <input class="Input2Cards" type="number" placeholder="YY">
-          <p></p>
-        </div>
-        <div class="DateCVV">
-          <h1>cvc</h1>
-          <input type="number" placeholder="e.g. 123">
-          <p></p>
-        </div>
-      </div> */
+@media ( min-width:420px ) {
+    section {
+        display: flex;
+    }
+    .section-cards {
+        width: 30%;
+        height: 100vh;
+        background-color: var(--Very_dark_violet);
+        display: flex;
+    }
+
+    .section-cards_first-card {
+        left: 50%;
+        top: 410px;
+    }
+    .section-cards_Second-card {
+        left: 30%;
+        top: 220px;
+    }
+
+    .Section-Infoclientscards {
+        margin-top: 200px;
+        margin-left: 25%;
+        
+    }
+}
