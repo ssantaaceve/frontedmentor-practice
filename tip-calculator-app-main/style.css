@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Space Mono', monospace;
+}
+:root {
+    --Very_dark_cyan:  hsl(183, 100%, 15%);
+    --Dark_grayish_cyan: hsl(186, 14%, 43%);
+    --Grayish_cyan: hsl(184, 14%, 56%);
+    --Light_grayish_cyan: hsl(185, 41%, 84%);
+    --Very_light_grayish_cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+.Section-Calculadora { 
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Section-Calculadora_NomCalculadora {
+    width: 375px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    background-color: var(--Light_grayish_cyan);
+}
+
+.Section-Calculadora_CalculoCalculadora {
+    width: 375px;
+    height: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--Very_light_grayish_cyan);
+}
+.CalculoCalculadora-IngresoTotal {
+    width: 80%;
+}
+.CalculoCalculadora-IngresoTotal input {
+    width: 80%;
+}
+.CalculoCalculadora-IngresoTotal span {
+    position: absolute;
+}
+
+.CalculoCalculadora-tipCalcu {
+    width: 80%;
+}
+
+.CalculoCalculadora-tipCalculadora {
+    width: 80%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 25px 25px 25px;
+    grid-row-gap: 10%;
+    grid-column-gap:10%;
+}
+.CalculoCalculadora-tipCalculadora div {
+    width: 80px;
+    height: 30px;
+    background-color: var(--Very_dark_cyan);
+    color: var(--White);
+    text-align: center;
+}
+
+
+
+
+
+/* <body>
+  <section class="Section">
+    <menu class="Section-Calculadora">
+      <div class="Section-Calculadora_NomCalculadora">
+        <h1></h1>
+      </div>
+      <div class="Section-Calculadora_CalculoCalculadora">
+        <div class="CalculoCalculadora-IngresoTotal">
+          <p>Bill </p>
+          <input type="number" name="ValorGanancia" id="ValorGanancia" placeholder="0">
+          <span class="Logopesos"></span>
+        </div>
+        <div class="CalculoCalculadora-%tipCalculadora">
+          <p>Select Tip %</p>
+          <div class="%tipCalculadora5%">5</div>
+          <div class="%tipCalculadora10%">10</div>
+          <div class="%tipCalculadora15%">15</div>
+          <div class="%tipCalculadora25%">25</div>
+          <div class="%tipCalculadora50%">50</div>
+          <div class="%tipCalculadoraCustom">Custom</div>
+        </div>
+        <div class="CalculoCalculadora-NumDePersonas">
+          <p>Number of People</p>
+          <input type="number" name="ValorGanancia" id="ValorGanancia" placeholder="0">
+          <span class="LogoPerson"></span>
+        </div>
+        <div class="CalculoCalculadora-Resultado">
+          <div class="Resultado_TipAmount">
+            <div class="text-TipAmount">
+              <p>TipAmount</p>
+              <p>/Person</p>
+            </div>
+            <p class="Valor-TipAmount">$0.0</p>
+          </div>
+          <div class="Resultado_Total">
+            <div class="text-Total">
+              <p>Total</p>
+              <p>/Person</p>
+            </div>
+            <p class="Valor-Total">$0.0</p>
+          </div>
+        </div>
+        <button>RESET</button>
+      </div>
+    </menu>
+  </section>
+  <script src="./script.js"></script>
+</body> */
